@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54f23314-08bb-437a-a381-c89c7ef2f348}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>solarbot</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/solarbot</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/solarbot</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/solarbot</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>C:\Users\deuli\OneDrive\Documentos\SDR\VisualStudio\usr_include\include;C:\Users\deuli\OneDrive\Documentos\SDR\VisualStudio\usr_include\usr\local\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>C:\Users\deuli\OneDrive\Documentos\SDR\VisualStudio\usr_include\include;C:\Users\deuli\OneDrive\Documentos\SDR\VisualStudio\usr_include\usr\local\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <MultiProcNumber>1</MultiProcNumber>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="AES128.cpp" />
+    <ClCompile Include="CamNavigator.cpp" />
+    <ClCompile Include="Cam_Realsense.cpp" />
+    <ClCompile Include="CRC16.cpp" />
+    <ClCompile Include="CRC8.cpp" />
+    <ClCompile Include="Cropmapping_Process.cpp" />
+    <ClCompile Include="Detect_object.cpp" />
+    <ClCompile Include="ControlUnit.cpp" />
+    <ClCompile Include="Fast512BytesCircularBuffer.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GPS.cpp" />
+    <ClCompile Include="GPSConsumer.cpp" />
+    <ClCompile Include="Head.cpp" />
+    <ClCompile Include="LineNavigator.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MasterApp.cpp" />
+    <ClCompile Include="Navigator.cpp" />
+    <ClCompile Include="PowerUnit.cpp" />
+    <ClCompile Include="PracticalSocket.cpp" />
+    <ClCompile Include="RobotNetClient.cpp" />
+    <ClCompile Include="RobotNetServer.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="SharedGeoImage.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="Solarbot.cpp" />
+    <ClCompile Include="Telemetry.cpp" />
+    <ClCompile Include="UdpVideoSender.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AES128.h" />
+    <ClInclude Include="CamNavigator.h" />
+    <ClInclude Include="Cam_Realsense.h" />
+    <ClInclude Include="CRC16.h" />
+    <ClInclude Include="CRC8.h" />
+    <ClInclude Include="Cropmapping_Process.h" />
+    <ClInclude Include="Detect_object.h" />
+    <ClInclude Include="ControlUnit.h" />
+    <ClInclude Include="err.h" />
+    <ClInclude Include="Fast512BytesCircularBuffer.h" />
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="GPS.h" />
+    <ClInclude Include="GPSConsumer.h" />
+    <ClInclude Include="Head.h" />
+    <ClInclude Include="LineNavigator.h" />
+    <ClInclude Include="MasterApp.h" />
+    <ClInclude Include="Navigator.h" />
+    <ClInclude Include="PowerUnit.h" />
+    <ClInclude Include="PracticalSocket.h" />
+    <ClInclude Include="RobotNetClient.h" />
+    <ClInclude Include="RobotNetServer.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="SharedGeoImage.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="SocketException.h" />
+    <ClInclude Include="Solarbot.h" />
+    <ClInclude Include="Telemetry.h" />
+    <ClInclude Include="UdpVideoSender.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>ARM</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>/usr/local/include/opencv4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>pthread;opencv_core;opencv_videoio;opencv_imgcodecs;opencv_highgui;opencv_imgproc;realsense2;rt;boost_system</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PreprocessorDefinitions>ARM</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>/usr/local/include/opencv4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>pthread;opencv_core;opencv_videoio;opencv_imgcodecs;opencv_highgui;opencv_imgproc;realsense2;rt;boost_system</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,82 @@
+﻿Xoffset=-27     Yoffset=19      Zoffset=-45
+Xoffset=-28     Yoffset=21      Zoffset=-43
+
+Robot		Earth
+119.5		116.5
+305.0		299
+
+
+apuntando para 30
+X=133, y=195, z=-53, h=55.6
+
+apuntando para 0
+X = 205, y=114  z=-53  h = 29
+
+apuntando para 45
+x=86  y=220  z=-45  h =68 
+
+apuntando para 90
+x= -74 y =228  z= -46  h = 108
+
+apuntando para 135
+x=-212  y =118  z=-50   h =150 
+
+apuntando para 180
+x=-226  y =-68  z=-54   h =196
+
+apuntando para 225
+x= -75   y = -192  z = -56  h= 248
+
+apuntando para 270
+x=112  y =-168  z=-62  h =303
+
+apuntando para 315
+x=215  y =-40  z=-58   h =349 
+
+Xoffset=-9      Yoffset=-33     Zoffset=-50
+Xoffset=-14     Yoffset=20      Zoffset=-56
+Xoffset=-10     Yoffset=19      Zoffset=-48
+Xoffset=-11     Yoffset=19      Zoffset=-50
+
+Con offset x=-11   y=19
+Real	Robot
+260	263
+0	4
+45	48
+90	90
+135	135
+180	182
+226	233
+270	279
+315	322
+
+Con offset en cero:
+Real	Robot
+0	9
+45	49
+90	90
+135	132
+180	176
+225	227
+270	279
+315	327
+
+
+Mag	X	Y	Z
+0	214	44	-55
+90	-6	235	-46
+180	-240	20	-53
+270	26	-191	-53
+
+Ymin = -195
+Xmax = 214
+Ymax = 236
+Xmin = 238
+
+El sensor está corrido 2 grados anti-horario
+
+ 
+
+
+
+

@@ -1,0 +1,18 @@
+﻿
+Increasse SWAP
+Edit file "/etc/dphys-swapfile" and set: CONF_SWAPSIZE=2048
+
+After that, to resstart the swap execute the command: sudo /etc/init.d/dphys-swapfile restart swapon -s
+
+
+sudo apt-get install libusb-1.0-0-dev libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
+git clone https://github.com/IntelRealSense/librealsense.git
+cd ~/librealsense
+
+sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ 
+sudo udevadm control --reload-rules && udevadm trigger
+
+mkdir  build  && cd build
+cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=Release -DFORCE_LIBUVC=true
+make
+sudo make install 
