@@ -1,0 +1,40 @@
+
+
+g++ -std=c++11 -I../cppgit2/build/include -L../cppgit2/build/lib -o git git.cpp -lcppgit2 export LD_LIBRARY_PATH=build/lib:$LD_LIBRARY_PATH
+
+
+./my_sample
+
+CMakeLists.txt
+ make
+[ 50%] Linking CXX executable git
+/usr/bin/ld: CMakeFiles/git.dir/git.cpp.o: undefined reference to symbol 'git_libgit2_shutdown'
+/usr/bin/ld: //home/solarbot/git_update/cppgit2/build/lib/git2.so.1.0: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+
+
+/usr/bin/ld: cannot find -lgit2
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/git.dir/build.make:85: git] Error 1
+make[1]: *** [CMakeFiles/Makefile2:76: CMakeFiles/git.dir/all] Error 2
+make: *** [Makefile:84: all] Error 2
+
+
+
+g++
+
+ g++ -std=c++11 -I../cppgit2/build/include/ -L../cppgit2/build/lib/ -o git git.cpp -lcppgit2 -lgit2
+
+/usr/bin/ld: /tmp/ccK7fDCN.o: undefined reference to symbol 'git_libgit2_shutdown'
+/usr/bin/ld: //home/solarbot/git_update/cppgit2/build/lib/git2.so.1.0: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+
+/usr/bin/ld: cannot find -lgit2
+collect2: error: ld returned 1 exit status
+
+
+ld -lgit2 --verbose
+
+sudo ln -s /home/solarbot/git_update/cppgit2/build/lib/git2.so  /usr/lib/libgit2.so 
+sudo ln -s /home/solarbot/git_update/cppgit2/build/lib/libcppgit2.so.1  /usr/lib/libcppgit2.so.1
+sudo ln -s /home/solarbot/git_update/cppgit2/build/lib/git2.so.1.0:  /usr/lib/git2.so.1.0
