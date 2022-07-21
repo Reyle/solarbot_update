@@ -1,4 +1,4 @@
-SISISISISISISIISISISISISI
+OKOOLJHVKHGVkhbkjgnwrjçkgnwrçkjgn
 
 g++ -std=c++11 -I../cppgit2/build/include -L../cppgit2/build/lib -o git git.cpp -lcppgit2 export LD_LIBRARY_PATH=build/lib:$LD_LIBRARY_PATH
 
